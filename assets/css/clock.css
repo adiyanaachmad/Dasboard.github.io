@@ -1,0 +1,152 @@
+.bottom-container-skill-ui .upcoming-ui .clock__container{
+    height: 300px;
+    grid-template-rows: 1fr max-content;
+}
+
+.bottom-container-skill-ui .upcoming-ui .clock__circle{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    box-shadow: -6px -6px 16px #fff, 
+                6px 6px 16px hsla(240, 30%, 86%, 1), 
+                inset 6px 6px 16px hsla(240, 30%, 86%, 1), 
+                inset -6px -6px 16px #fff;
+    /* box-shadow: inset 2px 2px 8px rgba(55, 94, 148, 0.3), inset -3px -2px 5px rgba(255, 255, 255, 0.8); */
+    border-radius: 50%;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s; 
+}
+
+.bottom-container-skill-ui .upcoming-ui .clock__content{
+    align-self: center;
+    row-gap: 0.5rem;
+}
+
+.grid{
+    display: grid;
+}
+
+.bottom-container-skill-ui .upcoming-ui .clock__twelve, 
+.bottom-container-skill-ui .upcoming-ui .clock__three, 
+.bottom-container-skill-ui .upcoming-ui .clock__six, 
+.bottom-container-skill-ui .upcoming-ui .clock__nine {
+  position: absolute;
+  width: 1rem;
+  height: 1px;
+  background-color: hsl(240, 12%, 65%);
+}
+
+.bottom-container-skill-ui .upcoming-ui .clock__twelve, 
+.bottom-container-skill-ui .upcoming-ui .clock__six {
+  transform: translateX(-50%) rotate(90deg);
+}
+
+.bottom-container-skill-ui .upcoming-ui .clock__twelve {
+  top: 1.25rem;
+  left: 50%;
+}
+
+.bottom-container-skill-ui .upcoming-ui .clock__three {
+  top: 50%;
+  right: .75rem;
+}
+
+.bottom-container-skill-ui .upcoming-ui  .clock__six {
+  bottom: 1.25rem;
+  left: 50%;
+}
+
+.bottom-container-skill-ui .upcoming-ui .clock__nine {
+  left: .75rem;
+  top: 50%;
+}
+
+.bottom-container-skill-ui .upcoming-ui .clock__rounder {
+    width: .75rem;
+    height: .75rem;
+    background-color: hsl(240, 53%, 49%);
+    border-radius: 50%;
+    border: 2px solid hsl(240, 24%, 94%);
+    z-index: 10;
+}
+
+.bottom-container-skill-ui .upcoming-ui .clock__hour, 
+.bottom-container-skill-ui .upcoming-ui .clock__minutes, 
+.bottom-container-skill-ui .upcoming-ui .clock__seconds {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-container-skill-ui .upcoming-ui .clock__hour {
+  width: 105px;
+  height: 105px;
+}
+
+.bottom-container-skill-ui .upcoming-ui .clock__hour::before {
+  content: '';
+  position: absolute;
+  background-color:  hsl(240, 12%, 35%);
+  width: .25rem;
+  height: 3rem;
+  border-radius: .75rem;
+  z-index: 1;
+}
+
+.bottom-container-skill-ui .upcoming-ui .clock__minutes {
+  width: 136px;
+  height: 136px;
+}
+
+.bottom-container-skill-ui .upcoming-ui .clock__minutes::before {
+  content: '';
+  position: absolute;
+  background-color: hsl(240, 12%, 35%);
+  width: .25rem;
+  height: 4rem;
+  border-radius: .75rem;
+  z-index: 1;
+}
+
+.bottom-container-skill-ui .upcoming-ui .clock__seconds {
+  width: 130px;
+  height: 130px;
+}
+
+.bottom-container-skill-ui .upcoming-ui .clock__seconds::before {
+  content: '';
+  position: absolute;
+  background-color: hsl(240, 53%, 49%);
+  width: .125rem;
+  height: 5rem;
+  border-radius: .75rem;
+  z-index: 1;
+}
+
+.bottom-container-skill-ui .upcoming-ui .clock__text {
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-container-skill-ui .upcoming-ui .clock__text-hour, 
+.bottom-container-skill-ui .upcoming-ui .clock__text-minutes {
+  font-size: 3rem;
+  font-weight: 500;
+  color: hsl(240, 53%, 15%);
+}
+
+.bottom-container-skill-ui .upcoming-ui .clock__text-ampm {
+  font-size: .625rem;
+  color:hsl(240, 53%, 15%);
+  font-weight: 500;
+  margin-left: .25rem;
+}
+
+.bottom-container-skill-ui .upcoming-ui .clock__date {
+  text-align: center;
+  font-size: .813rem;
+  font-weight: 500;
+}

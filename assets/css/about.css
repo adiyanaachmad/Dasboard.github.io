@@ -1,0 +1,450 @@
+.bottom-container{
+    display: flex;
+    gap: 20px;
+    padding: 1rem 1rem 0;
+}
+
+canvas{
+    width: 100%!important;
+}
+
+
+.shadow{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.bottom-container .prog-status,
+.bottom-container .popular,
+.bottom-container .upcoming{
+    background-color: var(--body-color);
+    padding: 20px;
+    border-radius: 15px;
+}
+.bottom-container .prog-status{
+    padding: 20px 0;
+}
+.bottom-container .prog-status{
+    width: 50%;
+    overflow: hidden;
+}
+
+.bottom-container .prog-status .header-event,
+.bottom-container .popular .header-event,
+.bottom-container .upcoming .header-event{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+.bottom-container .prog-status .header-event .event-judul-init,
+.bottom-container .popular .header-event .event-judul-init,
+.bottom-container .upcoming .header-event .event-judul-init{
+    font-weight: 600;
+}
+
+.bottom-container .upcoming .header-event .event-judul-init{
+    cursor: pointer;
+}
+
+.bottom-container .prog-status .header-event .tabs,
+.bottom-container .upcoming .header-event .tabs{
+    background: var(--first-color-light);
+    padding: 4px;
+    border-radius: 5px;
+    display: flex;
+    gap: 5px;
+}
+.bottom-container .upcoming .header-event .tabs{
+    cursor: pointer;
+}
+.bottom-container .prog-status .header-event .tabs a,
+.bottom-container .upcoming .header-event .tabs a{
+    padding: 4px 5px;
+    font-size: 12px;
+    color: #000;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.bottom-container .upcoming .header-event .tabs a{
+    cursor: pointer;
+}
+
+.bottom-container .prog-status .header-event .tabs a.active{
+    background:  var(--body-color);
+}
+
+.bottom-container .prog-status .details{
+    display: flex;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.bottom-container .prog-status .details .item h2{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.bottom-container .prog-status .details .item p{
+    font-size: 13px;
+    color: #9b9b9b;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.bottom-container .prog-status .details .separator{
+    width: 3px;
+    background: #000;
+    border-radius: 20px;
+}
+
+.bottom-container .popular{
+    width: 25%;
+}
+
+.bottom-container .popular .header-event,
+.bottom-container .upcoming .header-event{
+    margin-bottom: 0px;
+}
+
+.bottom-container .popular .header-event a,
+.bottom-container .upcoming .header-event a{
+    font-size: 12px;
+    color: #000;
+    font-weight: 600;
+    padding: 4px 8px;
+    background: var(--first-color-light);
+    border-radius: 5px;
+}
+
+.bottom-container .popular video{
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    /* filter: saturate(1.3); */
+}
+
+.bottom-container .popular img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    filter: saturate(1.3);
+}
+
+.bottom-container .popular .user-init{
+    margin-bottom: 0px;
+}
+
+.bottom-container .popular .audio{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.bottom-container .popular .audio i{
+    font-size: 26px;
+    background: #eff6ff;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.bottom-container .popular .audio a{
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+    line-height: 18px;
+}
+
+.bottom-container .popular p{
+    font-size: 14px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.bottom-container .popular .listen{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom-container .popular .listen .author{
+    padding: 6px 10px;
+    background: #f3f3f3;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: var(--bs-border-radius-xl);
+}
+
+.bottom-container .popular .listen .author img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 0px;
+}
+
+.bottom-container .popular .listen .author a{
+    font-size: 14px;
+    color: #000;
+}
+
+.bottom-container .popular .listen .author .info{
+    font-size: 12px;
+    color: #9b9b9b;
+    margin-bottom: 0px;
+}
+
+.bottom-container .popular .listen button{
+    border: none;
+    color: #fff;
+    background: #031224;
+    padding: 6px 14px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.bottom-container .popular .listen button i{
+    font-size: 16px;
+}
+
+.bottom-container .upcoming {
+    width: 25%;
+    overflow: hidden;
+}
+
+.bottom-container .upcoming .stats{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 0px;
+    gap: 20px;
+    zoom: .7;
+}
+
+.bottom-container .upcoming .stats .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 190px;
+    padding: 25px;
+    background: #EBF6FF;
+    border-radius: .5rem;
+}
+
+.bottom-container .upcoming .stats .item .top{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.bottom-container .upcoming .stats .top p{
+    font-size: 16px;
+    color: #8EA3B7;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.bottom-container .upcoming .stats .item .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom-container .upcoming .stats .item .bottom .line{
+    width: 4px;
+    height: 30px;
+    background: #369FFF;
+    border-radius: 20px;
+}
+
+.bottom-container .upcoming .stats .item .bottom h3{
+    font-size: 40px;
+    color: #006ED3;
+}
+
+.bottom-container .upcoming .weekly{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px;
+    background: #F4F0FA;
+    border-radius: .5rem;
+    zoom: .7;
+}
+
+.bottom-container .upcoming .weekly .title{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.bottom-container .upcoming .weekly .title .line{
+    width: 6px;
+    height: 50px;
+    background: #006ED3;
+    border-radius: 20px;
+}
+
+.bottom-container .upcoming .weekly h5{
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.bottom-container .upcoming .weekly .progress-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, #f7f7f7 79%, transparent 80% 100%),
+    conic-gradient(#CCC 25%, #006ED3 0%);
+}
+
+.bottom-container .upcoming .weekly .progress-bar::before{
+    content: "3/4";
+    font-size: 14px;
+    color: #000;
+}
+
+
+
+
+@media screen and (max-width: 1300px){
+    .bottom-container .popular .audio a{
+        font-size: 12px;
+    }
+    .bottom-container .popular p{
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+    .bottom-container .popular .listen{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .bottom-container .popular .listen .author{
+        width: 100%;
+    }
+    .bottom-container .upcoming .events .item{
+        padding: 6px 10px;
+    }
+    .bottom-container .upcoming .events .item div i{
+        font-size: 20px;
+    }
+    .bottom-container .upcoming .events .item div a{
+        font-size: 13px;
+    }
+    .bottom-container .upcoming .events .item .event-info a{
+        font-size: 11px;
+    }
+    .bottom-container .upcoming .events .item .event-info p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    .bottom-container .prog-status .nav .profile{
+        padding: 5px;
+    }
+    .bottom-container .prog-status .nav .profile .info p,
+    .bottom-container .prog-status .status .header-event .event-judul-init#small,
+    .bottom-container .prog-status .status .header-init-skill h4#small{
+        display: none;
+    }
+    .bottom-container .prog-status .status .item-list-init-skill{
+        flex-wrap: wrap;
+    }
+    .bottom-container .prog-status .status .item-list-init-skill .item-init-skill{
+        width: 48%;
+    }
+    .bottom-container{
+        flex-wrap: wrap;
+    }
+    .bottom-container .prog-status{
+        width: 100%;
+    }
+    .bottom-container .popular,
+    .bottom-container .upcoming{
+        width: 48%;
+    }
+    .bottom-container .popular .audio a{
+        font-size: 18px;
+    }
+    .bottom-container .popular p{
+        font-size: 14px;
+    }
+    .bottom-container .popular .listen{
+        flex-direction: row;
+    }
+    .bottom-container .popular .listen button{
+        width: 50%;
+    }
+    .bottom-container .upcoming .events .item{
+        padding: 10px;
+    }
+    .bottom-container .upcoming .events .item div i{
+        font-size: 30px;
+    }
+    .bottom-container .upcoming .events .item .event-info a{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .bottom-container .prog-status .nav{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .bottom-container .upcoming .events .item .event-info a{
+        font-size: 15px;
+    }
+    .bottom-container .prog-status .details .item h2{
+        font-size: 18px;
+    }
+    .bottom-container .prog-status .status .item-list-init-skill .item-init-skill .info h5{
+        font-size: 15px;
+    }
+    .bottom-container .popular,
+    .bottom-container .upcoming{
+        width: 100%;
+    }
+    .banner-wrapper {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .bottom-container .prog-status .status .item-list-init-skill{
+        flex-wrap: wrap;
+        zoom: .7;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .bottom-container .prog-status .details .item h2 {
+        font-size: 16px;
+    }
+    .banner-wrapper {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+    .bottom-container .upcoming .events .item .event-info a {
+        font-size: 13px;
+    }
+    .bottom-container .popular .audio a{
+        font-size: 16px;
+    }
+}
+
